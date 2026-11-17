@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:MyXmlMAUIApp.Model"
+             x:Class="MyXmlMAUIApp.MainPage"
+             Title="Програмне забезпечення на мережі факультету">
+
+    <Grid RowDefinitions="Auto,Auto,*" Padding="10" RowSpacing="8">
+
+        <ScrollView Orientation="Horizontal">
+            <HorizontalStackLayout Spacing="6">
+                <Button Text="Відкрити XML" Clicked="OpenButton_Clicked" />
+                <Button Text="Пошук" Clicked="SearchButton_Clicked" />
+                <Button Text="Трансформувати в HTML" Clicked="TransformButton_Clicked" />
+                <Button Text="Clear" Clicked="ClearButton_Clicked" />
+                <Button Text="Вийти" Clicked="ExitButton_Clicked" />
+            </HorizontalStackLayout>
+        </ScrollView>
+
+        <Label x:Name="fileLabel" Grid.Row="1" Text="Файл не вибрано" />
+
+        <Grid Grid.Row="2" ColumnDefinitions="430,*" ColumnSpacing="12">
+
+            <ScrollView>
+                <VerticalStackLayout Spacing="6" Padding="0,0,16,0">
+                    <Label Text="Спосіб аналізу" FontAttributes="Bold" />
+                    <RadioButton x:Name="saxRadio" Content="SAX API" GroupName="parser" IsChecked="True" />
+                    <RadioButton x:Name="domRadio" Content="DOM API" GroupName="parser" />
+                    <RadioButton x:Name="linqRadio" Content="LINQ to XML" GroupName="parser" />
+
+                    <Label Text="Ключове слово" FontAttributes="Bold" Margin="0,10,0,0" />
+                    <Entry x:Name="keywordEntry" Placeholder="наприклад, UML" Completed="SearchButton_Clicked" />
+
+                    <Label Text="Атрибути (значення з файлу)" FontAttributes="Bold" Margin="0,10,0,0" />
+                    <VerticalStackLayout x:Name="attributesLayout" Spacing="4" />
+                </VerticalStackLayout>
+            </ScrollView>
+
+            <Grid Grid.Column="1" RowDefinitions="Auto,*" RowSpacing="6">
+                <Label x:Name="resultLabel" FontAttributes="Bold" />
+                <CollectionView x:Name="resultsView" Grid.Row="1">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Software">
+                            <Border Margin="0,0,0,6" Padding="10" StrokeShape="RoundRectangle 6">
+                                <VerticalStackLayout Spacing="2">
+                                    <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="16" />
+                                    <Label Text="{Binding Details}" />
+                                </VerticalStackLayout>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentPage>

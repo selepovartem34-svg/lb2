@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="software.xsl"?>
+<Software>
+  <Program Name="Visual Studio Community 2022" Type="Середовище розробки" Version="17.14" Author="Microsoft" License="Безкоштовна">
+    <Annotation>Інтегроване середовище розробки для C#, C++ та .NET, використовується на лабораторних з ООП.</Annotation>
+    <Conditions>Безкоштовно для навчання та некомерційних проєктів.</Conditions>
+    <Distributive>\\fcsc-srv\soft\VisualStudio2022\vs_community.exe</Distributive>
+  </Program>
+  <Program Name="JetBrains Rider" Type="Середовище розробки" Version="2024.3" Author="JetBrains" License="Освітня">
+    <Annotation>Кросплатформне середовище розробки для .NET з вбудованим аналізатором коду.</Annotation>
+    <Conditions>Студентська ліцензія на рік після реєстрації з університетською поштою.</Conditions>
+    <Distributive>\\fcsc-srv\soft\JetBrains\Rider-2024.3.exe</Distributive>
+  </Program>
+  <Program Name="Python" Type="Інтерпретатор" Version="3.12.7" Author="Python Software Foundation" License="Вільна">
+    <Annotation>Інтерпретатор мови Python зі стандартною бібліотекою та менеджером пакетів pip.</Annotation>
+    <Conditions>Вільне використання та поширення за ліцензією PSF.</Conditions>
+    <Distributive>\\fcsc-srv\soft\Python\python-3.12.7-amd64.exe</Distributive>
+  </Program>
+  <Program Name="MATLAB" Type="Математичний пакет" Version="R2023b" Author="MathWorks" License="Комерційна">
+    <Annotation>Пакет для чисельних обчислень, роботи з матрицями та побудови графіків.</Annotation>
+    <Conditions>Тільки на комп'ютерах факультету, мережева ліцензія на 25 робочих місць.</Conditions>
+    <Distributive>\\fcsc-srv\soft\MATLAB\R2023b\setup.exe</Distributive>
+  </Program>
+  <Program Name="PostgreSQL" Type="СУБД" Version="16.4" Author="PostgreSQL Global Development Group" License="Вільна">
+    <Annotation>Об'єктно-реляційна система керування базами даних.</Annotation>
+    <Conditions>Вільне використання за ліцензією PostgreSQL.</Conditions>
+    <Distributive>\\fcsc-srv\soft\PostgreSQL\postgresql-16.4-windows-x64.exe</Distributive>
+  </Program>
+  <Program Name="Microsoft SQL Server Express" Type="СУБД" Version="2022" Author="Microsoft" License="Безкоштовна">
+    <Annotation>Безкоштовна редакція SQL Server для навчальних баз даних до 10 ГБ.</Annotation>
+    <Conditions>Безкоштовно, обмеження на розмір бази та кількість ядер.</Conditions>
+    <Distributive>\\fcsc-srv\soft\SQLServer\SQL2022-SSEI-Expr.exe</Distributive>
+  </Program>
+  <Program Name="Git" Type="Система контролю версій" Version="2.47" Author="Software Freedom Conservancy" License="Вільна">
+    <Annotation>Розподілена система контролю версій для роботи з репозиторіями.</Annotation>
+    <Conditions>Вільне використання за ліцензією GPL v2.</Conditions>
+    <Distributive>\\fcsc-srv\soft\Git\Git-2.47.0-64-bit.exe</Distributive>
+  </Program>
+  <Program Name="Система перевірки лабораторних робіт" Type="Веб-застосунок" Version="2.1" Author="Коваленко Ігор Петрович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра теорії та технології програмування" License="Внутрішня">
+    <Annotation>Автоматична перевірка програм студентів на наборі тестів.</Annotation>
+    <Conditions>Тільки для студентів і викладачів факультету, вхід через корпоративний обліковий запис.</Conditions>
+    <Distributive>\\fcsc-srv\soft\internal\labchecker-2.1.zip</Distributive>
+  </Program>
+  <Program Name="Тренажер з чисельних методів" Type="Навчальна програма" Version="1.4" Author="Мельник Оксана Василівна" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра обчислювальної математики" License="Внутрішня">
+    <Annotation>Покрокова демонстрація методів розв'язання нелінійних рівнянь і систем.</Annotation>
+    <Conditions>Використання в навчальному процесі факультету.</Conditions>
+    <Distributive>\\fcsc-srv\soft\internal\nm-trainer-1.4.zip</Distributive>
+  </Program>
+  <Program Name="Електронний журнал успішності" Type="Веб-застосунок" Author="Бондар Андрій Сергійович" Faculty="Факультет інформаційних технологій" Department="Кафедра програмних систем і технологій" License="Внутрішня">
+    <Annotation>Облік оцінок і відвідування занять для викладачів кафедр.</Annotation>
+    <Conditions>Доступ лише для викладачів після погодження з деканатом.</Conditions>
+    <Distributive>\\fcsc-srv\soft\internal\gradebook.zip</Distributive>
+  </Program>
+  <Program Name="LibreOffice" Type="Офісний пакет" Version="24.8" Author="The Document Foundation" License="Вільна">
+    <Annotation>Текстовий редактор, електронні таблиці та презентації.</Annotation>
+    <Conditions>Вільне використання за ліцензією MPL 2.0.</Conditions>
+    <Distributive>\\fcsc-srv\soft\LibreOffice\LibreOffice_24.8_Win_x86-64.msi</Distributive>
+  </Program>
+  <Program Name="draw.io" Type="Графічний редактор" Version="24.7" Author="JGraph" License="Вільна">
+    <Annotation>Редактор діаграм, використовується для UML-діаграм на курсі ООП.</Annotation>
+    <Conditions>Вільне використання за ліцензією Apache 2.0.</Conditions>
+    <Distributive>\\fcsc-srv\soft\drawio\draw.io-24.7.5-windows-installer.exe</Distributive>
+  </Program>
+  <Program Name="Wolfram Mathematica" Type="Математичний пакет" Author="Wolfram Research" License="Комерційна">
+    <Annotation>Система символьних обчислень для курсів математичного аналізу та алгебри.</Annotation>
+    <Conditions>Університетська ліцензія, встановлення тільки в комп'ютерних класах.</Conditions>
+    <Distributive>\\fcsc-srv\soft\Mathematica\Mathematica_14.1_WIN.exe</Distributive>
+  </Program>
+</Software>
